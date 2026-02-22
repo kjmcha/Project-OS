@@ -8,18 +8,37 @@ public class fixedDepositAcc extends bank{
     //constructor
     public fixedDepositAcc(String accName, String accountID, Double balance, String bankName, Double transferFee, Integer time, LocalDateTime date){
         super(accName, accountID, balance, bankName, transferFee);
+        this.time = time;
+        this.date = date;
 
     }
 
     //set
-
+    public void setTime(Integer time) {
+        this.time = time;
+    }
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+    public void setInterestRate(Double interestRate) {
+        this.interestRate = interestRate;
+    }
     
     //get
-
+    public Integer getTime() {
+        return this.time;
+    }
+    public LocalDateTime getDate() {
+        return this.date;
+    }
+    public Double getInterestRate() {
+        return this.interestRate;
+    }
 
     //method
     public void cutInterest(Double amount){
         //deduce interest rate when transfer
+        
 
     }
     public void getInterest(Double  balance){
