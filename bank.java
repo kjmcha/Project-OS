@@ -1,24 +1,37 @@
-public class bank extends bankAccount{
-    //variable
+public class bank extends bankAccount {
+    // variable
     private String bankName = null;
     private Double transferFee = null;
 
-    //constructor
-    public bank(String accName, String accountID, Double balance, String bankName, Double transferFee){
+    // constructor
+    public bank(String accName, String accountID, Double balance, String bankName, Double transferFee) {
         super(accName, accountID, balance);
         this.bankName = bankName;
         this.transferFee = transferFee;
     }
 
-    //set
+    // set
+    public void setBankName(String bankName) {
+        this.bankName = bankName;
+    }
 
+    public void setTransferFee(Double transferFee) {
+        this.transferFee = transferFee;
+    }
 
-    //get
+    // get
+    public String getBankName() {
+        return this.bankName;
+    }
 
+    public Double getTransferFee() {
+        return this.transferFee;
+    }
 
-    //method
-    public boolean checkBank(String bankName){
-        //check if target account id the same bank or not
+    // method
+    public boolean checkBank(String bankName) {
+        // check if target account id the same bank or not
+        
         return true;
     }
 }
